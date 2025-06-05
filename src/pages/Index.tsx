@@ -64,6 +64,39 @@ const Index = () => {
     handleWhatsAppRedirect(mainForm, false);
   };
 
+  const projectImages = [
+    {
+      src: "/lovable-uploads/476123ee-1841-47f4-b5c2-41f4efe0ef79.png",
+      title: "Obra Comercial - Fase Estrutural",
+      description: "Construção com placas de EPS Moduart demonstrando a facilidade de montagem e precisão dimensional."
+    },
+    {
+      src: "/lovable-uploads/37c9bdf6-15ef-45d9-9f8c-3f15c1d875b5.png",
+      title: "Construção Residencial - Paredes Prontas",
+      description: "Residência construída com placas EPS Moduart, oferecendo isolamento térmico superior e rapidez na execução."
+    },
+    {
+      src: "/lovable-uploads/8d8ab08b-b7d6-4ef9-b3e6-41b9da59566e.png",
+      title: "Projeto Industrial - Sistema Modular",
+      description: "Sistema construtivo modular com placas EPS, permitindo construção rápida e eficiente."
+    },
+    {
+      src: "/lovable-uploads/be2e0716-e08f-4166-b23f-457349a8a5fc.png",
+      title: "Construção Residencial Avançada",
+      description: "Casa construída com tecnologia EPS Moduart, mostrando a qualidade do acabamento final."
+    },
+    {
+      src: "/lovable-uploads/cfcf0588-0c43-483e-83dc-d8501b8776be.png",
+      title: "Ambiente Interno - Detalhes Construtivos",
+      description: "Interior da construção evidenciando a precisão e qualidade das placas EPS Moduart."
+    },
+    {
+      src: "/lovable-uploads/41fc5186-5622-48dc-8a88-050295618a4d.png",
+      title: "Acabamento Interno Profissional",
+      description: "Ambiente interno finalizado demonstrando a versatilidade e qualidade das placas EPS."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -131,11 +164,17 @@ const Index = () => {
             </div>
 
             <div className="relative">
-              <div className="aspect-video bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg shadow-2xl flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <FileText size={80} className="mx-auto text-white/80" />
-                  <p className="text-lg text-white/90">Imagem das Placas de EPS Moduart</p>
-                  <p className="text-sm text-white/70">Qualidade e Robustez para sua Obra</p>
+              <div className="aspect-video rounded-lg shadow-2xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/81e54642-3102-4b22-82e9-a75b83aefb05.png" 
+                  alt="Placas de EPS Moduart - Qualidade e Tecnologia para Construção"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+                  <div className="p-6 text-white">
+                    <p className="text-lg font-semibold">Placas de EPS Moduart</p>
+                    <p className="text-sm text-white/90">Qualidade e Robustez para sua Obra</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -290,15 +329,19 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Card key={item} className="border-0 shadow-lg overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-                  <FileText size={60} className="text-gray-600" />
+            {projectImages.map((project, index) => (
+              <Card key={index} className="border-0 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={project.src} 
+                    alt={project.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">Projeto Residencial {item}</h3>
-                  <p className="text-gray-600 text-sm">
-                    Construção utilizando placas de EPS Moduart com excelente isolamento térmico e rapidez na execução.
+                  <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {project.description}
                   </p>
                 </CardContent>
               </Card>
