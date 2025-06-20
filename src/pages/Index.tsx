@@ -5,10 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { GalleryGrid } from "@/components/GalleryGrid";
 import { toast } from "sonner";
-
 const Index = () => {
   const [heroForm, setHeroForm] = useState({
     nome: "",
@@ -23,7 +20,6 @@ const Index = () => {
     email: "",
     telefone: ""
   });
-
   const handleWhatsAppRedirect = (formData: any, isHero = false) => {
     const {
       nome,
@@ -67,7 +63,6 @@ const Index = () => {
     }
     handleWhatsAppRedirect(mainForm, false);
   };
-
   const projectImages = [{
     src: "/lovable-uploads/476123ee-1841-47f4-b5c2-41f4efe0ef79.png",
     title: "Obra Comercial - Fase Estrutural",
@@ -93,78 +88,6 @@ const Index = () => {
     title: "Acabamento Interno Profissional",
     description: "Ambiente interno finalizado demonstrando a versatilidade e qualidade das placas EPS."
   }];
-
-  const galleryImages = [
-    // Obras em andamento
-    {
-      src: "/lovable-uploads/476123ee-1841-47f4-b5c2-41f4efe0ef79.png",
-      title: "Obra Comercial - Fase Estrutural",
-      description: "Construção com placas de EPS Moduart demonstrando a facilidade de montagem e precisão dimensional.",
-      category: "em-andamento" as const
-    },
-    {
-      src: "/lovable-uploads/8d8ab08b-b7d6-4ef9-b3e6-41b9da59566e.png",
-      title: "Projeto Industrial - Sistema Modular",
-      description: "Sistema construtivo modular com placas EPS, permitindo construção rápida e eficiente.",
-      category: "em-andamento" as const
-    },
-    {
-      src: "/lovable-uploads/0e6c5cb9-8b92-4c21-97e3-d5e67bb8b5c2.png",
-      title: "Interior em Acabamento - Precisão Construtiva",
-      description: "Ambiente interno com placas EPS em processo de acabamento, evidenciando a precisão dimensional.",
-      category: "em-andamento" as const
-    },
-    {
-      src: "/lovable-uploads/51be41ec-b1f9-45b1-8e04-e2e1b0a8c4dc.png",
-      title: "Estrutura em Montagem - Sistema EPS",
-      description: "Montagem da estrutura com placas EPS, demonstrando a agilidade do sistema construtivo.",
-      category: "em-andamento" as const
-    },
-    // Projetos finalizados
-    {
-      src: "/lovable-uploads/37c9bdf6-15ef-45d9-9f8c-3f15c1d875b5.png",
-      title: "Construção Residencial - Paredes Prontas",
-      description: "Residência construída com placas EPS Moduart, oferecendo isolamento térmico superior e rapidez na execução.",
-      category: "finalizados" as const
-    },
-    {
-      src: "/lovable-uploads/be2e0716-e08f-4166-b23f-457349a8a5fc.png",
-      title: "Construção Residencial Avançada",
-      description: "Casa construída com tecnologia EPS Moduart, mostrando a qualidade do acabamento final.",
-      category: "finalizados" as const
-    },
-    {
-      src: "/lovable-uploads/cfcf0588-0c43-483e-83dc-d8501b8776be.png",
-      title: "Ambiente Interno - Detalhes Construtivos",
-      description: "Interior da construção evidenciando a precisão e qualidade das placas EPS Moduart.",
-      category: "finalizados" as const
-    },
-    {
-      src: "/lovable-uploads/41fc5186-5622-48dc-8a88-050295618a4d.png",
-      title: "Acabamento Interno Profissional",
-      description: "Ambiente interno finalizado demonstrando a versatilidade e qualidade das placas EPS.",
-      category: "finalizados" as const
-    },
-    {
-      src: "/lovable-uploads/4e6d5dfe-9f8c-4b21-a7e3-c1d67bb8b5a9.png",
-      title: "Detalhes Construtivos - Qualidade Superior",
-      description: "Detalhamento da estrutura evidenciando a qualidade dos materiais e técnicas utilizadas.",
-      category: "finalizados" as const
-    },
-    {
-      src: "/lovable-uploads/a1c2f8be-6d91-4e35-b8f4-e2c5b7a9d1f6.png",
-      title: "Obra Finalizada - Sistema EPS Completo",
-      description: "Projeto finalizado com sistema EPS completo, demonstrando eficiência e durabilidade.",
-      category: "finalizados" as const
-    },
-    {
-      src: "/lovable-uploads/9b8e7f4c-3a21-4d15-b6c9-f1e8c2b7d5a3.png",
-      title: "Refúgio - Fachada Externa Finalizada",
-      description: "Fachada externa do projeto Refúgio, evidenciando o acabamento de qualidade com placas EPS.",
-      category: "finalizados" as const
-    }
-  ];
-
   return <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 px-4">
@@ -427,42 +350,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Galeria de Soluções */}
-      <section className="py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Galeria de Soluções: Conheça Nossos Projetos em Detalhes
-            </h2>
-            <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
-            <p className="text-lg text-gray-600 mt-6 max-w-3xl mx-auto">
-              Explore nossa galeria completa de projetos realizados com placas de EPS Moduart. 
-              Veja de perto a qualidade, precisão e versatilidade de nossas soluções construtivas.
-            </p>
-          </div>
-
-          <Tabs defaultValue="todos" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 max-w-md mx-auto mb-8">
-              <TabsTrigger value="todos">Todas as Imagens</TabsTrigger>
-              <TabsTrigger value="em-andamento">Obras em Andamento</TabsTrigger>
-              <TabsTrigger value="finalizados">Projetos Finalizados</TabsTrigger>
-            </TabsList>
-            
-            <TabsContent value="todos">
-              <GalleryGrid images={galleryImages} activeCategory="todos" />
-            </TabsContent>
-            
-            <TabsContent value="em-andamento">
-              <GalleryGrid images={galleryImages} activeCategory="em-andamento" />
-            </TabsContent>
-            
-            <TabsContent value="finalizados">
-              <GalleryGrid images={galleryImages} activeCategory="finalizados" />
-            </TabsContent>
-          </Tabs>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
@@ -588,5 +475,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
