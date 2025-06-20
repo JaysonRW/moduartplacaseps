@@ -186,9 +186,7 @@ const Index = () => {
                   <ArrowDown className="text-green-600" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Peças em EPS</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Precisão dimensional que otimiza sua montagem e acabamento com tecnologia avançada de extrusão.
-                </p>
+                <p className="text-gray-600 leading-relaxed">Precisão dimensional que otimiza sua montagem e acabamento com tecnologia avançada.</p>
               </CardContent>
             </Card>
 
