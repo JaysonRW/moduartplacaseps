@@ -205,10 +205,8 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <ArrowUp className="text-purple-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-900">EPS Tipo 3</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Padrão de qualidade que oferece leveza, isolamento térmico e acústico superior com densidade EPS tipo 3.
-                </p>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">EPS para construção</h3>
+                <p className="text-gray-600 leading-relaxed">Padrão de qualidade que oferece leveza, isolamento térmico e acústico.</p>
               </CardContent>
             </Card>
 
@@ -456,7 +454,7 @@ const Index = () => {
               <div className="space-y-2 text-gray-400">
                 <p>(41) 99811-8203</p>
                 <p>(41) 99972-8097</p>
-                <p>contato@moduart.com.br</p>
+                <p>freddy.vendas@gmail.com</p>
               </div>
             </div>
             
