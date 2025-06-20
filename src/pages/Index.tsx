@@ -23,7 +23,6 @@ const Index = () => {
     email: "",
     telefone: ""
   });
-  const [galleryImages, setGalleryImages] = useState([]);
 
   const handleWhatsAppRedirect = (formData: any, isHero = false) => {
     const {
@@ -68,6 +67,7 @@ const Index = () => {
     }
     handleWhatsAppRedirect(mainForm, false);
   };
+
   const projectImages = [{
     src: "/lovable-uploads/476123ee-1841-47f4-b5c2-41f4efe0ef79.png",
     title: "Obra Comercial - Fase Estrutural",
