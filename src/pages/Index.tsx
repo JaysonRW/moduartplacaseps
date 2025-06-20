@@ -195,10 +195,8 @@ const Index = () => {
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <FileText className="text-orange-600" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-900">Recobrimento 2,5mm</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Resistência, durabilidade e beleza incomparáveis com recobrimento em micro concreto de 2,5mm.
-                </p>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">Recobrimento</h3>
+                <p className="text-gray-600 leading-relaxed">Resistência, durabilidade e beleza incomparáveis com recobrimento em micro concreto.</p>
               </CardContent>
             </Card>
 
