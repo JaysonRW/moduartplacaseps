@@ -303,7 +303,7 @@ const Index = () => {
                   <img src={project.src} alt={project.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">Construção Residencial - Térmico superior</h3>
+                  <h3 className="text-lg font-semibold mb-2">Montagem com Placas EPS</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {project.description}
                   </p>
