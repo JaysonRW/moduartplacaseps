@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowDown, ArrowUp, FileText, Phone, Mail } from "lucide-react";
+import { ArrowDown, ArrowUp, FileText, Phone, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -490,13 +490,9 @@ const Index = () => {
               <div className="mt-8 text-center">
                 <p className="text-gray-600 mb-4">Prefere ligar? Fale com nossa equipe:</p>
                 <div className="flex justify-center space-x-6">
-                  <a href="tel:+5541998118203" className="text-blue-600 hover:text-blue-800 font-semibold">
-                    (41) 99811-8203
-                  </a>
+                  <a href="https://wa.me/5541998118203?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99811-8203</a>
                   <span className="text-gray-400">|</span>
-                  <a href="tel:+5541999728097" className="text-blue-600 hover:text-blue-800 font-semibold">
-                    (41) 99972-8097
-                  </a>
+                  <a href="https://wa.me/5541999728097?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99972-8097</a>
                 </div>
               </div>
             </CardContent>
@@ -519,18 +515,18 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-gray-400">
-                <p>(41) 99811-8203</p>
-                <p>(41) 99972-8097</p>
-                <p>freddy.vendas@gmail.com</p>
+                <a href="https://wa.me/5541998118203?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99811-8203</a>
+                <a href="https://wa.me/5541999728097?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99972-8097</a>
+                <a href="mailto:freddy.vendas@gmail.com" className="hover:text-white transition-colors">freddy.vendas@gmail.com</a>
               </div>
             </div>
             
             <div>
               <h4 className="text-lg font-semibold mb-4">Redes Sociais</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Facebook</a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://www.facebook.com/moduartisopor" className="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/modu_art/" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/company/moduart-acabamentos-arquitetonicos" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
               </div>
             </div>
           </div>
