@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "sonner";
+import Galeria from "../components/Galeria";
 
 const Index = () => {
   const [heroForm, setHeroForm] = useState({
@@ -344,6 +345,9 @@ const Index = () => {
               </Card>
             ))}
           </div>
+
+          {/* Galeria de Projetos */}
+          <Galeria />
 
           {/* Depoimentos */}
           <div className="grid md:grid-cols-2 gap-8">
