@@ -33,7 +33,7 @@ const Index = () => {
       email,
       telefone
     } = formData;
-    let message = `Olá! Gostaria de solicitar informações sobre placas de EPS para construção.\n\n`;
+    let message = `Olá! Gostaria de solicitar informações sobre paineis de EPS para construção.\n\n`;
     message += `Nome: ${isHero ? nome : nomeCompleto}\n`;
     if (empresa) message += `Empresa: ${empresa}\n`;
     message += `Tipo de Projeto: ${isHero ? projeto : tipoProjeto}\n`;
@@ -68,7 +68,7 @@ const Index = () => {
   const projectImages = [{
     src: "/lovable-uploads/476123ee-1841-47f4-b5c2-41f4efe0ef79.png",
     title: "Obra Comercial - Fase Estrutural",
-    description: "Construção com placas de EPS Moduart demonstrando a facilidade de montagem e precisão dimensional."
+    description: "Construção com paineis de EPS Moduart demonstrando a facilidade de montagem e precisão dimensional."
   }, {
     src: "/lovable-uploads/37c9bdf6-15ef-45d9-9f8c-3f15c1d875b5.png",
     title: "Estrutura Avançada em EPS",
@@ -76,7 +76,7 @@ const Index = () => {
   }, {
     src: "/lovable-uploads/8d8ab08b-b7d6-4ef9-b3e6-41b9da59566e.png",
     title: "Início da Montagem Modular",
-    description: "Sistema construtivo com placas EPS, mostrando como a montagem é prática e eficiente."
+    description: "Sistema construtivo com paineis EPS, mostrando como a montagem é prática e eficiente."
   }, {
     src: "/lovable-uploads/be2e0716-e08f-4166-b23f-457349a8a5fc.png",
     title: "Obra com EPS em Fase de Revestimento",
@@ -98,7 +98,7 @@ const Index = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Placas de EPS para Construção: 
+                  paineis de EPS para Construção: 
                   <span className="text-blue-300"> A Base de Confiança</span> para Sua Obra
                 </h1>
                 <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
@@ -171,12 +171,12 @@ const Index = () => {
               <div className="aspect-video rounded-lg shadow-2xl overflow-hidden">
                 <img 
                   src="/lovable-uploads/81e54642-3102-4b22-82e9-a75b83aefb05.png" 
-                  alt="Placas de EPS Moduart - Qualidade e Tecnologia para Construção" 
+                  alt="paineis de EPS Moduart - Qualidade e Tecnologia para Construção" 
                   className="w-full h-full object-cover" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
                   <div className="p-6 text-white">
-                    <p className="text-lg font-semibold">Placas de EPS Moduart</p>
+                    <p className="text-lg font-semibold">paineis de EPS Moduart</p>
                     <p className="text-sm text-white/90">Qualidade e Robustez para sua Obra</p>
                   </div>
                 </div>
@@ -321,7 +321,7 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Inspire-se: Construções de Sucesso com Placas de EPS Moduart
+              Inspire-se: Construções de Sucesso com paineis de EPS Moduart
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
           </div>
@@ -348,43 +348,6 @@ const Index = () => {
 
           {/* Galeria de Projetos */}
           <Galeria />
-
-          {/* Depoimentos */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8">
-                <p className="text-gray-600 italic mb-4">
-                  "As placas de EPS da Moduart revolucionaram nossos projetos. A qualidade é excepcional e a rapidez na entrega nos permite cumprir prazos apertados."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-blue-600 font-semibold">JC</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold">João Carlos Silva</p>
-                    <p className="text-sm text-gray-500">Construções Silva & Cia</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8">
-                <p className="text-gray-600 italic mb-4">
-                  "O suporte técnico da Moduart é incomparável. Eles nos acompanham em cada etapa do projeto, garantindo o melhor resultado."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-orange-600 font-semibold">MF</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold">Maria Fernanda Costa</p>
-                    <p className="text-sm text-gray-500">Arquiteta</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
@@ -490,9 +453,9 @@ const Index = () => {
               <div className="mt-8 text-center">
                 <p className="text-gray-600 mb-4">Prefere ligar? Fale com nossa equipe:</p>
                 <div className="flex justify-center space-x-6">
-                  <a href="https://wa.me/5541998118203?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99811-8203</a>
+                  <a href="https://wa.me/5541998118203?text=vi%20este%20an%C3%BAncio%20sobre%20paineis%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99811-8203</a>
                   <span className="text-gray-400">|</span>
-                  <a href="https://wa.me/5541999728097?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99972-8097</a>
+                  <a href="https://wa.me/5541999728097?text=vi%20este%20an%C3%BAncio%20sobre%20paineis%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99972-8097</a>
                 </div>
               </div>
             </CardContent>
@@ -507,7 +470,7 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Moduart</h3>
               <p className="text-gray-400 leading-relaxed">
-                Especialistas em placas de EPS para construção civil. 
+                Especialistas em paineis de EPS para construção civil. 
                 Qualidade, tecnologia e suporte especializado para sua obra.
               </p>
             </div>
@@ -515,8 +478,8 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-gray-400">
-                <a href="https://wa.me/5541998118203?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99811-8203</a>
-                <a href="https://wa.me/5541999728097?text=vi%20este%20an%C3%BAncio%20sobre%20placas%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99972-8097</a>
+                <a href="https://wa.me/5541998118203?text=vi%20este%20an%C3%BAncio%20sobre%20paineis%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99811-8203</a>
+                <a href="https://wa.me/5541999728097?text=vi%20este%20an%C3%BAncio%20sobre%20paineis%20de%20eps%20e%20quero%20saber%20mais" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><MessageCircle className="text-green-500" size={18}/> (41) 99972-8097</a>
                 <a href="mailto:freddy.vendas@gmail.com" className="hover:text-white transition-colors">freddy.vendas@gmail.com</a>
               </div>
             </div>
